@@ -40,15 +40,6 @@ _(Best viewed on desktop for full effects!)_
 
 ---
 
-## 📸 Screenshots
-
-> *(Optional: Add screenshots here using markdown image tags)*  
-> Example:
-> ```markdown
-> ![Hero Section](./images/screenshot1.png)
-> ```
-
----
 
 ## 🧑‍💻 How to Run Locally
 
