@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-theme="light">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+    
+    <!-- Navigation -->
+    <header class="navbar">
+  <nav class="nav-container">
+    <div class="nav-logo">
+      <a href="#home">
+        <span class="logo-text">Swarupkp</span><span class="logo-accent">.</span>
+      </a>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li class="nav-item"><a href="#home" class="nav-link"><i class="fas fa-home nav-icon"></i><span class="nav-text">Home</span></a></li>
+      <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user nav-icon"></i><span class="nav-text">About</span></a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link"><i class="fas fa-code nav-icon"></i><span class="nav-text">Skills</span></a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-laptop-code nav-icon"></i><span class="nav-text">Projects</span></a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope nav-icon"></i><span class="nav-text">Contact</span></a></li>
+    </ul>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+    <!-- Hero Section with Particles -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Swarup Kumar Patro</span>
+                <span class="hero-role typing-text" data-text='["Data Analyst","Frontend Developer", "Creative Coder", "Problem Solver"]'></span>
+            </h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                Data analyst and full-stack developer who engineers practical solutions through collaborative problem-solving.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="C:\Users\subha\Desktop\Portfolio - Copy\Portfolio - Copy\Swarup_Kumar_Patro_Resume.pdf.pdf" download class="btn btn-secondary">
+                    <span>Download Resume</span>
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                    <div class="image-wrapper">
+                        <img src="images/img.jpeg" alt="swarupkp-profile.img" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <div class="about-info" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Data Analyst | Frontend Developer</h3>
+                    <p> Versatile and curious developer with a solid foundation in programming, databases, and core computer science
+ principles. Passionate about Machine Learning and Full Stack Development. Eager to explore new technologies and
+ continuously improve through hands-on learning. Collaborative by nature and committed to delivering practical and
+ reliable solutions.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                            <h4>Web Development</h4>
+                            <p>In Progress</p>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <h4>3</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <h4>5+</h4>
+                            <p>Technologies Mastered</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">What I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Computer Science</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Data Structures & Algorithms</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Database Management Systems</span>
+                        <span class="skill-tag">Computer Networks</span>
+                        <span class="skill-tag">Object-Oriented Programming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Exceptional Websites at Lightning Speed</p>
+            </div>
+
+            <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+  <div class="project-header">
+    <h3 class="project-title">Rock Paper Scissors Game</h3>
+    <p class="project-description">
+      A simple browser-based game using HTML, CSS, and JavaScript where players compete against a computer in a classic game of Rock, Paper, Scissors.
+    </p>
+  </div>
+  <div class="project-tech">
+    <span class="tech-tag">HTML</span>
+    <span class="tech-tag">CSS</span>
+    <span class="tech-tag">JavaScript</span>
+  </div>
+  <div class="project-links">
+    <a href="https://swarup-kp.github.io/Rock-Paper-Scissors/" class="project-link" target="_blank">
+      <i class="fas fa-external-link-alt"></i>
+      <span>Play Now</span>
+    </a>
+    <a href="https://github.com/swarup-kp/Rock-Paper-Scissors" class="project-link" target="_blank">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+  </div>
+</div>
+
+<div class="project-item" data-aos="fade-up" data-aos-delay="300">
+  <div class="project-header">
+    <h3 class="project-title">Tic Tac Toe Game</h3>
+    <p class="project-description">
+      A 2-player Tic Tac Toe game with win/draw detection and reset functionality. Built using HTML, CSS, and JavaScript with responsive layout and color-coded moves.
+    </p>
+  </div>
+  <div class="project-tech">
+    <span class="tech-tag">HTML</span>
+    <span class="tech-tag">CSS</span>
+    <span class="tech-tag">JavaScript</span>
+  </div>
+  <div class="project-links">
+    <a href="https://swarup-kp.github.io/Tic-Tac-Toe/" class="project-link" target="_blank">
+      <i class="fas fa-external-link-alt"></i>
+      <span>Play Now</span>
+    </a>
+    <a href="https://github.com/swarup-kp/Tic-Tac-Toe" class="project-link" target="_blank">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+  </div>
+</div>
+
+            
+            <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <h3 class="project-title">Modern Portfolio Website</h3>
+                        <p class="project-description">
+                            This project is a responsive portfolio website featuring advanced animations, modern design
+                            principles, and seamless user experience across all devices.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Now</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <h3 class="project-title">Plant Disease Prediction Analysis</h3>
+                        <p class="project-description">
+                            Developed a system to identify plant diseases from leaf images using convolutional neural networks. Implemented
+ image preprocessing, feature extraction, and deployed a model with a user-friendly interface.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Now</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <h3 class="project-title">End-to-End Cricket Data Analytics</h3>
+                        <p class="project-description">
+                             Collected live cricket match data via web scraping, cleaned and analyzed it using Pandas, and built interactive
+ dashboards in Power BI to visualize player and team performance trends.
+                        </p>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">Web Scraping</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Visit Now</span>
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's connect and create something amazing!</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and design.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>swaruppatro2@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Brahmapur, India</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/swarup-kp" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/swarupkp" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://swaruppatro2@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <!-- <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="9eda5e55-d74d-44b8-9ec3-4b51426bd673">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+
+                </div> -->
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        
+                        <input type="hidden" name="access_key" value="9eda5e55-d74d-44b8-9ec3-4b51426bd673">
+                        <div class="form-group">
+                        <input type="text" placeholder="Name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                        <input type="email" placeholder="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                        <textarea placeholder="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Swarup Kumar Patro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
