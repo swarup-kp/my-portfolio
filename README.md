@@ -8,7 +8,7 @@ Crafted with love using **HTML**, **CSS**, and **JavaScript**.
 
 ## 🚀 Live Demo
 
-🔗 [Visit My Portfolio](https://swarup-kp.github.io/portfolio/)  
+🔗 [Visit My Portfolio](https://swarup-kp.github.io/my-portfolio/)  
 _(Best viewed on desktop for full effects!)_
 
 ---
